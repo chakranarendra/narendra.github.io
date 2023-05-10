@@ -4,7 +4,7 @@
 ![Bitcoin price, supply with reddit subscribers, Tether supply, transactions squared, difficulty and hashrate](https://i.imgur.com/CridKuT.png)
 
 Author:
-- Jure V. `<jure42@protonmail.com>`
+- narendra. `<chakranarendra@gmail.com>`
 
 ### Base metrics
 - price (in USD and BTC)
@@ -21,7 +21,7 @@ Author:
 
 
 ## Setup
-To setup and play with `Kriptomist` we recommend using the **IPython** shell.
+To setup and play with `greed` we recommend using the **IPython** shell.
 
 ### Requirements
 - If you are on a Windows machine, we recommend [Anaconda Python distribution](https://www.anaconda.com/)
@@ -30,7 +30,7 @@ To setup and play with `Kriptomist` we recommend using the **IPython** shell.
 
       pip install -r requirements.txt
 ### Database
-- Download the [kriptomist SQLite database from 2020-07-03](https://bit.ly/3eWhJ6B) and save it to `db/kriptomist.sqlite`
+- Download the [greed SQLite database from 2020-07-03](https://bit.ly/3eWhJ6B) and save it to `db/greed.sqlite`
   
   **OR**
   
@@ -40,7 +40,7 @@ To setup and play with `Kriptomist` we recommend using the **IPython** shell.
 Using IPython, you can run scripts using `run` IPython command. The advantage is that you keep the global namespace in the shell after the script was executed.
 
 ### Updating data for the current day
-    In [1]: run kriptomist.py
+    In [1]: run greed.py
 
 This populates the database with (reddit, twitter, ...) data at the time the command was executed.
 It also outputs 2 HTML files: 
@@ -55,7 +55,7 @@ The default number of coins to process is initialy set to 10. To process more co
 The maximum value for `NUM_COINS` is 5000.
 
 ### Displaying chart for a specific coin
-    In [1]: run kriptomist.py bitcoin
+    In [1]: run greed.py bitcoin
 
 Once you've looked at the html table and want to analyze a specific coin (in this case - bitcoin), you can run the above command (replace bitcoin with the name of your chosen coin).
 
